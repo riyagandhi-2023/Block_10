@@ -1,3 +1,4 @@
+/*for picasso page*/
 /*for button*/
 .open-button {
     background-color: #20bb80;
@@ -13,50 +14,50 @@
     right: 2%;
     left:2%;
   }
+  /*formsubmitted page*/
 .container{
-    display: grid;
+    display: flex;
     align-items: center;
     grid-template-columns: 1fr 1fr ;
     column-gap: 5px;
 }
-
-  
 .text {
     font-size: 300%;
   }
-
+/*for picasso page*/
+/*3 sqaure blocks image*/
 .content{
     display: flex;
     align-items: center;
-    /*grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr; 
     margin-top: 2%;
     margin-left: 1.5%;
     margin-right: 0.5%;
-
   }
-
+/*3 sqaure blocks image*/
 .image1 {
+    flex-direction: row;
+    width: fit-content;
     max-width: 97%;
   }
-
+/*for all images: square, humans, trees with owl and bubbles*/
 .shape{
     display: flex;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2%;
     margin-left: 1.5%;
     margin-right: 0.5%;
 
   }
-.image2{
-
+  /*1 big sqaure block image*/
+  .image2{
+    flex-direction: row;
     width: 96%; 
-    position: absolute;
     top: 39%;
     left: 2%;
     z-index: 1;
-}
-
+  }
+  /*front tree image with owl*/ 
 .image3{
     position: absolute;
     top: 15%;
@@ -64,6 +65,7 @@
     width: 20%;
     z-index: 2;
 }
+/*back tree image with owl*/
 .image4{
     position: absolute;
     top: 25%;
@@ -71,6 +73,7 @@
     width: 15%;
     z-index: 2;
 }
+/*human images*/
 .image5{
     position: absolute;
     top: 50%;
@@ -78,6 +81,7 @@
     width: 20%;
     z-index: 2;
 }
+/*human images*/
 .image6{
     position: absolute;
     top: 50%;
@@ -86,6 +90,7 @@
     transform: scaleX(-1);
     z-index: 2;
 }
+/*bubble images*/
 .image7{
     position: absolute;
     top: 2%;
@@ -93,6 +98,7 @@
     width: 30%;
     z-index: 2;
 }
+/*bubble images*/
 .image8{
     position: absolute;
     top: 8%;
@@ -101,20 +107,21 @@
     transform: scaleY(-1);
     z-index: 2;
 }
-
+/*for form page*/
+/*conatin whole form*/
 .formContaier {
     border-radius: 5px;
     background-color: #f2f2f2;
     font-size: medium;
     margin-top: -3%;
 }
-
+/*conatin label input for form*/
 .Container1 {
     padding: 50px;
     width: 50%;
     margin-left: 20%;
 }
-
+/*input type fot the form firstname and last name*/
 input[type=text],
 select,
 textarea {
@@ -128,7 +135,7 @@ textarea {
     resize: vertical;
     font-size: medium;
 }
-
+/*input type for the email*/
 input[type=email] {
     width: 100%;
     padding: 12px;
@@ -140,6 +147,7 @@ input[type=email] {
     resize: vertical;
     font-size: medium;
 }
+/*input fot the submit button*/
 
 input[type=submit] {
     background: black;
@@ -154,15 +162,51 @@ input[type=submit] {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
-
+/*button when hover*/
 input[type=submit]:hover {
     background-color: gray;
 }
-
+/*for all screen sizes*/
 @media screen and (max-width:480px){
     .image2{
-        width: 92%;
-        right: 1%;
-        left: 4%;
+        width: 94%;
+        right: auto;
+        left: auto;
+        top: auto;
+        z-index: 1;
     }
+    .image3{
+        top: 10%;
+        left: 75%;
+        width: 20%;
+        z-index: 2;
+    }
+    .image4{
+        top: 17%;
+        left: 74.9%;
+        width: 15%;
+        z-index: 2;
+    }
+    .image5{
+        top: 38%;
+        left: 10%;
+        width: 20%;
+        z-index: 2;
+    }
+    .image6{
+        top: 38%;
+        left: 29%;
+        width: 20%;
+        transform: scaleX(-1);
+        z-index: 2;
+    }
+    .open-button {
+        bottom: 0.01vw;
+        width: 96vw;
+        font-size: 150%;
+        right: 2%;
+        left:2%;
+        top: 70%;
+      }
+
 }
