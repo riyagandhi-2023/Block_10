@@ -51,6 +51,7 @@
   }
   /*1 big sqaure block image*/
   .image2{
+    position: absolute;
     flex-direction: row;
     width: 96%; 
     top: 39%;
